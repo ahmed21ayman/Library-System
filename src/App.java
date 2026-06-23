@@ -10,6 +10,18 @@ public class App {
         }
     }
 
+    static class Member{
+        private int id;
+        private String name;
+        Member(int id, String name){
+            this.id = id;
+            this.name = name;
+        }
+        void memberinfo(){
+            System.out.println(" id : " + id + " name: " + name + " ");
+        }
+    }
+
     public static void main(String[] args) throws Exception {
         
     }
