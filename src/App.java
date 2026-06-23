@@ -22,6 +22,39 @@ public class App {
         }
     }
 
+    static class Library extends Book{
+        Library(String title, String author, boolean Availbility){
+            super(title, author, Availbility);
+        }
+
+        void addBook(){
+            this.title = title;
+            this.author = author;
+            this.Availbility = true;
+            System.out.println(title + " by " + author + " this book is added now");
+        }
+
+        void borrowBook(){
+            if(this.Availbility != true){
+                System.out.println(title + " this book is not avlible now");
+            }else {
+                this.title = title;
+                this.author = author;
+                this.Availbility = false;
+                System.out.println(title + " this book for you now");
+            }
+        }
+
+        void returnBook(){
+            this.title = title;
+            this.author = author;
+            this.Availbility = true;
+            System.out.println(title + " this book is back avlible now");
+        }
+
+    }
+
+
     public static void main(String[] args) throws Exception {
         
     }
