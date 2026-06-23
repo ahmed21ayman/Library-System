@@ -56,6 +56,15 @@ public class App {
 
 
     public static void main(String[] args) throws Exception {
-        
+        Library b1 = new Library("w", "mohamed", true);
+        Library b2 = new Library("ww", "mohamed", true);
+        Library b3 = new Library("www", "mohamed", true);
+        Library b4 = new Library("wwww", "mohamed", true);
+        Library b5 = new Library("wwwww", "mohamed", true);
+        Member m1 = new Member(1, "ahmed");
+        Member m2 = new Member(2, "mohamed");
+        b1.borrowBook();
+        b1.borrowBook();
+        b1.returnBook();
     }
 }
